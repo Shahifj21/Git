@@ -1,0 +1,112 @@
+ user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git init
+Reinitialized existing Git repository in C:/Users/user/Documents/.git/
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git add feature1.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git add feature.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git commit - "feature1 and feature"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'feature1 and feature' did not match any file(s) known to git
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git commit -m "feature1 and feature"
+[master (root-commit) 42d2f17] feature1 and feature
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+ create mode 100644 feature1.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git bra…
+[4:18 PM, 8/10/2023] mohammedrafathali618: user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git init
+Reinitialized existing Git repository in C:/Users/user/Documents/.git/
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Code.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Log.txt
+        Output.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git add output.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Code.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Log.txt
+        Output.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git add Output.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Code.txt
+        new file:   Output.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Log.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git commit -m "change for Code and Output"
+[master (root-commit) c0022fc] change for Code and Output
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Code.txt
+ create mode 100644 Output.txt
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git remote add origin https://github.com/Alicodes21/Java_FDS.git
+
+user@DESKTOP-MFEN465 MINGW64 ~/Documents
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Alicodes21/Java_FDS/pull/new/master
+remote:
+To https://github.com/Alicodes21/Java_FDS.git
+ * [new branch]      master -> master
